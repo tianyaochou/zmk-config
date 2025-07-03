@@ -19,7 +19,9 @@
 #
 ---
 include:
-  - board: nrfmicro_13
+  - board: nrfmicro_11_flipped
     shield: sofle_left
-  - board: nrfmicro_13
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nrfmicro_11_flipped
     shield: sofle_right
